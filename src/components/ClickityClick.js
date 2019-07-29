@@ -11,7 +11,7 @@ export default class ClickityClick extends Component {
   handleClick = () => {
     this.setState({
       hasBeenClicked: true
-    })
+    }, () => console.log(this.state.hasBeenClicked))
   }
   render() {
     return(
